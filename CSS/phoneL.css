@@ -21,11 +21,12 @@ body {
     font-size: 13px;
     color: #777777;
     width: 125px;
+    visibility: hidden;
 }
 .topblack p.log {
     margin-top: 0px;
     padding-top: 10px;
-    padding-left: 30%;
+    margin-left: -100px;
     font-family: "Montserrat";
     font-size: 13px;
     color: #777777;

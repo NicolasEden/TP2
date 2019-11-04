@@ -2,7 +2,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-color: red;
+    background-color: blue;
 }
 
 .topblack {
@@ -21,6 +21,7 @@ body {
     font-size: 13px;
     color: #777777;
     width: 125px;
+    visibility: hidden;
 }
 .topblack p.log {
     margin-top: 0px;
