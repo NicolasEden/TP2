@@ -5,7 +5,6 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-color: red;
 }
 
 a {
@@ -77,9 +76,11 @@ a {
     padding-top: 5px;
     margin-left: 10px;
 }
+
 /*                    */
 /* WARNING: TOP WHITE */
 /*                    */
+
 .topwhite {
     width: 100%;
     height: 112px;
@@ -96,7 +97,9 @@ a {
 .topwhite span {
     font-weight: 400;
 }
+
 /* NAVIGATION */
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -123,7 +126,9 @@ a {
 .nav > div:hover, .nav a:hover{
     color: #00c8c8;
 }
+
 /* SEARCH */
+
 .search {
     display: inline-block;
     position: absolute;
@@ -146,4 +151,36 @@ i#search {
     margin-left: 145px;
     margin-top: 8px;
     position: absolute;
+}
+
+/*BANNER */
+.banner {
+    background-image: url(../Ressources/banner.png);
+    background-size: cover;
+    height: 450px;
+}
+p.banner-title {
+    margin: 0px;
+    padding: 172px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-weight: 700;
+}
+.banner span {
+    padding-left: 20px;
+    font-weight: 300;
+}
+p.banner-subtitle {
+    margin: 0px;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
 }

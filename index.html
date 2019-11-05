@@ -11,6 +11,8 @@
         <link media="(min-width:1200px) and (max-width:1400px)" rel="stylesheet" type="text/css" href="./CSS/laptopL.css">
         <link media="(min-width:1401px)" rel="stylesheet" type="text/css" href="./CSS/laptop.css">
         <script src="https://kit.fontawesome.com/51def7400e.js" crossorigin="anonymous"></script>
+        <script src="./JS/rmfield.js"></script>
+        <script src="./JS/nav.js"></script>
         <title>Avenue Fashion</title>
     </head>
     <body>
@@ -49,14 +51,18 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="nav-look">
-                        <a href="#" style="transition: 0.5s;"><p>LOOK BOOK</p></a>
+                        <a href="#" style="transition: 0.5s;"><p onlick="alert('test')">LOOK BOOK</p></a>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                 </div>
                 <div class="searchfield">
-                    <input class="search" placeholder="Search..." />
+                    <input id="search2" class="search" placeholder="Search..." />
                     <i id="search" class="fas fa-search"></i>
                 </div>
+            </div>
+            <div class="banner">
+                <p class="banner-title">our <span>lookbook</span></p>
+                <p class="banner-subtitle">Latest Posts - mens & womens</p>
             </div>
         </header>
 
