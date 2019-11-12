@@ -243,10 +243,35 @@ img.line {
         position: absolute;
         margin-top: -2px;
     }
-    i {
+    div.infohover1,div.infohover2,div.infohover3,div.infohover4,div.infohover5,div.infohover6,div.infohover7 {
         display: none;
+        position: absolute;
+        margin-top: -150px;
+        margin-left: 100px;
+        font-size: 40px;
+        color: white;
+        border: 3px solid black;
+        border-radius: 40px 40px 40px 40px;
+        background-color: black;
+        padding-left: 5px;
+        padding-right: 5px;
+        transition: 1s;
+        cursor: grab;
     }
-    i:hover {
-        display: inline-block;
-    }
+}
+.img1, .img2, .im3 {
+    cursor: grab;
+}
+
+
+
+
+
+
+.menu {
+    width: 467px;
+    height: 407px;
+    background-color: #f8f8f8;
+    position: absolute;
+    margin-top: -200px
 }
