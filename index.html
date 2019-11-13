@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +11,6 @@
     <link media="(min-width:1200px) and (max-width:1400px)" rel="stylesheet" type="text/css" href="./CSS/laptopL.css">
     <link media="(min-width:1401px)" rel="stylesheet" type="text/css" href="./CSS/laptop.css">
     <script src="https://kit.fontawesome.com/51def7400e.js" crossorigin="anonymous"></script>
-    <script src="./JS/rmfield.js"></script>
     <script src="./JS/nav.js"></script>
     <script src="./JS/random.js" charset="utf-8"></script>
     <title>Avenue Fashion</title>
@@ -63,9 +61,9 @@
                 </div>
                 <div class="nav-look">
                     <a href="#" style="transition: 0.5s;">
-                        <p onclick="alert('syudg')">LOOK BOOK</p>
+                        <p id="menutxt" onclick="popup()">LOOK BOOK</p>
                     </a>
-                    <i class="fas fa-chevron-down"></i>
+                    <i onclick="popup()" class="fas fa-chevron-down" id="chevron"></i>
                 </div>
             </div>
             <div class="searchfield">
@@ -73,12 +71,35 @@
                 <i id="search" class="fas fa-search"></i>
             </div>
         </div>
-        <div class="banner">
+        <!--            -->
+        <!-- MENU POPUP -->
+        <!--            -->
+        <div class="menu" id="menu">
+            <ul class="left">
+                <li class="menu-title">Our Lookbooks</li>
+                <li>Latest Posts (mixed)</li>
+                <li>Men’s Lookbook</li>
+                <li>Women’s Lookbook</li>
+            </ul>
+            <ul class="right">
+                <li class="menu-title">Your Lookbook</li>
+                <li>View and Edit</li>
+                <li>Share</li>
+                <li>Delete</li>
+            </ul>
+            <div class="menu-bg-black">
+                <div class="txt-menu">
+                    <p>Autumn sale!</p>
+                    <p id="2">up to 50% off</p>
+                </div>
+            </div>
+        </div>
+        <!--       -->
+        <!--BANNER -->
+        <!--       -->
+        <div class="banner" onclick="banner()">
             <p class="banner-title">our <span>lookbook</span></p>
             <p class="banner-subtitle">Latest Posts - mens & womens</p>
-        </div>
-        <div class="menu">
-
         </div>
     </header>
     <img class="line" src="./Ressources/line.png" alt="">
@@ -95,7 +116,7 @@
             <img onmouseout="rinfo1()" onmouseover="info1()" id="postition" class="imgcontener" src="./Ressources/img1.png" alt="">
             <div onmouseout="rinfo1()" onmouseover="info1()" id="hover1" class="infohover1">
                 <i class="fas fa-info-circle"></i>
-                <i class="fab fa-gratipay"></i>
+                <i class="far fa-thumbs-up"></i>
             </div>
         </div>
         <div class="img1">
@@ -103,17 +124,22 @@
             <img onmouseout="rinfo2()" onmouseover="info2()" class="imgcontener" src="./Ressources/img2.png" alt="">
             <div onmouseout="rinfo2()" onmouseover="info2()" id="hover2" class="infohover2">
                 <i class="fas fa-info-circle"></i>
-                <i class="fab fa-gratipay"></i>
+                <i class="far fa-thumbs-up"></i>
             </div>
         </div>
         <div class="img2">
+            <p class="title-img">Jane’s <span>lookbook</span></p>
+            <p class="txt1-img">get the look for under £200!</p>
+            <p class="txt2-img">We invited actress Jane Marshall to join us for the day and choose her perfect outfit from our vast range of womens fashion.</p>
+            <p class="txt3-img">This is of course not true as this is just a design for a website and this is simply filler text.</p>
+            <input type="button" class="button-img" value="VIEW NOW" />
         </div>
         <div class="img1">
             <p>ref<span>mj1</span></p>
             <img onmouseout="rinfo3()" onmouseover="info3()" class="imgcontener" src="./Ressources/img4.png" alt="">
             <div onmouseout="rinfo3()" onmouseover="info3()" id="hover3" class="infohover3">
                 <i class="fas fa-info-circle"></i>
-                <i class="fab fa-gratipay"></i>
+                <i class="far fa-thumbs-up"></i>
             </div>
         </div>
         <div class="img1">
@@ -121,7 +147,7 @@
             <img onmouseout="rinfo4()" onmouseover="info4()" class="imgcontener" src="./Ressources/img5.png" alt="">
             <div onmouseout="rinfo4()" onmouseover="info4()" id="hover4" class="infohover4">
                 <i class="fas fa-info-circle"></i>
-                <i class="fab fa-gratipay"></i>
+                <i class="far fa-thumbs-up"></i>
             </div>
         </div>
         <div class="img1">
@@ -129,7 +155,7 @@
             <img onmouseout="rinfo5()" onmouseover="info5()" class="imgcontener" src="./Ressources/img6.png" alt="">
             <div onmouseout="rinfo5()" onmouseover="info5()" id="hover5" class="infohover5">
                 <i class="fas fa-info-circle"></i>
-                <i class="fab fa-gratipay"></i>
+                <i class="far fa-thumbs-up"></i>
             </div>
         </div>
         <div class="img1">
@@ -137,7 +163,7 @@
             <img onmouseout="rinfo6()" onmouseover="info6()" class="imgcontener" src="./Ressources/img7.png" alt="">
             <div onmouseout="rinfo6()" onmouseover="info6()" id="hover6" class="infohover6">
                 <i class="fas fa-info-circle"></i>
-                <i class="fab fa-gratipay"></i>
+                <i class="far fa-thumbs-up"></i>
             </div>
         </div>
         <div class="img3">
@@ -147,7 +173,7 @@
             <img class="imgcontener" src="./Ressources/img9.png" alt="">
             <div onmouseout="rinfo7()" onmouseover="info7()" id="hover7" class="infohover7">
                 <i class="fas fa-info-circle"></i>
-                <i class="fab fa-gratipay"></i>
+                <i class="far fa-thumbs-up"></i>
             </div>
         </div>
     </div>
