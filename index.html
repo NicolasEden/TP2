@@ -10,9 +10,6 @@
     <link media="(min-width:992px) and (max-width:1199px)" rel="stylesheet" type="text/css" href="./CSS/tablet.css">
     <link media="(min-width:1200px) and (max-width:1400px)" rel="stylesheet" type="text/css" href="./CSS/laptopL.css">
     <link media="(min-width:1401px)" rel="stylesheet" type="text/css" href="./CSS/laptop.css">
-    <script src="https://kit.fontawesome.com/51def7400e.js" crossorigin="anonymous"></script>
-    <script src="./JS/nav.js"></script>
-    <script src="./JS/random.js" charset="utf-8"></script>
     <title>Avenue Fashion</title>
 </head>
 
@@ -61,9 +58,9 @@
                 </div>
                 <div class="nav-look">
                     <a href="#" style="transition: 0.5s;">
-                        <p id="menutxt" onclick="popup()">LOOK BOOK</p>
+                        <p id="menutxt">LOOK BOOK</p>
                     </a>
-                    <i onclick="popup()" class="fas fa-chevron-down" id="chevron"></i>
+                    <i class="fas fa-chevron-down" id="chevron"></i>
                 </div>
             </div>
             <div class="searchfield">
@@ -90,7 +87,7 @@
             <div class="menu-bg-black">
                 <div class="txt-menu">
                     <p>Autumn sale!</p>
-                    <p id="2">up to 50% off</p>
+                    <p id="menu-2">up to 50% off</p>
                 </div>
             </div>
         </div>
@@ -113,16 +110,16 @@
     <div class="contener">
         <div class="img1">
             <p>ref<span>m1</span></p>
-            <img onmouseout="rinfo1()" onmouseover="info1()" id="postition" class="imgcontener" src="./Ressources/img1.png" alt="">
-            <div onmouseout="rinfo1()" onmouseover="info1()" id="hover1" class="infohover1">
+            <img id="1" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="imgcontener" src="./Ressources/img1.png" alt="">
+            <div id="2" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="infohover1">
                 <i class="fas fa-info-circle"></i>
                 <i class="far fa-thumbs-up"></i>
             </div>
         </div>
         <div class="img1">
             <p>ref<span>w1</span></p>
-            <img onmouseout="rinfo2()" onmouseover="info2()" class="imgcontener" src="./Ressources/img2.png" alt="">
-            <div onmouseout="rinfo2()" onmouseover="info2()" id="hover2" class="infohover2">
+            <img id="3" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="imgcontener" src="./Ressources/img2.png" alt="">
+            <div id="4" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="infohover2">
                 <i class="fas fa-info-circle"></i>
                 <i class="far fa-thumbs-up"></i>
             </div>
@@ -136,52 +133,57 @@
         </div>
         <div class="img1">
             <p>ref<span>mj1</span></p>
-            <img onmouseout="rinfo3()" onmouseover="info3()" class="imgcontener" src="./Ressources/img4.png" alt="">
-            <div onmouseout="rinfo3()" onmouseover="info3()" id="hover3" class="infohover3">
+            <img id="5" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="imgcontener" src="./Ressources/img4.png" alt="">
+            <div id="6" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="infohover3">
                 <i class="fas fa-info-circle"></i>
                 <i class="far fa-thumbs-up"></i>
             </div>
         </div>
         <div class="img1">
             <p>ref<span>m2</span></p>
-            <img onmouseout="rinfo4()" onmouseover="info4()" class="imgcontener" src="./Ressources/img5.png" alt="">
-            <div onmouseout="rinfo4()" onmouseover="info4()" id="hover4" class="infohover4">
+            <img id="7" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="imgcontener" src="./Ressources/img5.png" alt="">
+            <div id="8" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="infohover4">
                 <i class="fas fa-info-circle"></i>
                 <i class="far fa-thumbs-up"></i>
             </div>
         </div>
         <div class="img1">
             <p>ref<span>w2</span></p>
-            <img onmouseout="rinfo5()" onmouseover="info5()" class="imgcontener" src="./Ressources/img6.png" alt="">
-            <div onmouseout="rinfo5()" onmouseover="info5()" id="hover5" class="infohover5">
+            <img id="9" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="imgcontener" src="./Ressources/img6.png" alt="">
+            <div id="10" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="infohover5">
                 <i class="fas fa-info-circle"></i>
                 <i class="far fa-thumbs-up"></i>
             </div>
         </div>
         <div class="img1">
             <p>ref<span>w3</span></p>
-            <img onmouseout="rinfo6()" onmouseover="info6()" class="imgcontener" src="./Ressources/img7.png" alt="">
-            <div onmouseout="rinfo6()" onmouseover="info6()" id="hover6" class="infohover6">
+            <img id="11" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="imgcontener" src="./Ressources/img7.png" alt="">
+            <div id="12" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="infohover6">
                 <i class="fas fa-info-circle"></i>
                 <i class="far fa-thumbs-up"></i>
             </div>
         </div>
         <div class="img3">
+            <p class="title-img" style="width: 400px;">Win <span>a new look!</span></p>
+            <p class="txt1-img" style="width: 450px; font-size: 11px;">add looks or items to your lookbook for a chance of winning </p>
+            <p class="txt2-img" style="width: 400px;">See an item or a complete look you like, click the ♥ button to add it to your lookbook and you’ll be automatically entered to our monthly draw where one winner gets a £300 gift voucher to spend on our website!</p>
+            <p class="txt3-img" style="width: 400px;">Terms: No purchase necessary. Vouchers are non-transferable and no cash alternative is ofered. Competition is for members only.</p>
+            <input type="button" class="button-img" value="SHOP NOW" />
+            <p class="txt4-img">win</p>
+            <p class="txt5-img">a new look</p>
         </div>
-        <div onmouseout="rinfo7()" onmouseover="info7()" class="img1">
+        <div class="img1">
             <p>ref<span>w4</span></p>
-            <img class="imgcontener" src="./Ressources/img9.png" alt="">
-            <div onmouseout="rinfo7()" onmouseover="info7()" id="hover7" class="infohover7">
+            <img id="13" onmouseover="info(event.target.id)" onmouseout="rinfo(event.target.id)" class="imgcontener" src="./Ressources/img9.png" alt="">
+            <div id="14" onmouseover="info(event.target.name)" onmouseout="rinfo(event.target.name)" class="infohover7">
                 <i class="fas fa-info-circle"></i>
                 <i class="far fa-thumbs-up"></i>
             </div>
         </div>
     </div>
 
-
-
-
-
+    <script src="https://kit.fontawesome.com/51def7400e.js" crossorigin="anonymous"></script>
+    <script src="./JS/nav.js"></script>
+    <script src="./JS/random.js" charset="utf-8"></script>
 </body>
-
 </html>

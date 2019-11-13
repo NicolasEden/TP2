@@ -1,79 +1,39 @@
-function info() {
-    alert('COUCOU !')
+document.getElementById('menutxt').addEventListener("click", popup);
+
+function info(event) {
+    parseInt(event);
+    if (event%2==1) {
+        var eventreal = document.getElementById(event).nextElementSibling.id;
+        document.getElementById(eventreal).style.transition = "0.5s";
+        document.getElementById(eventreal).style.opacity = "100%";
+        console.log(eventreal);
+    } else if (event%2==0) {
+        document.getElementById(event).style.transition = "0.5s";
+        document.getElementById(event).style.opacity = "100%";
+    }
+}
+function rinfo(event){
+    if (event%2==1) {
+        var eventreal = document.getElementById(event).nextElementSibling.id;
+        document.getElementById(eventreal).style.opacity = "0%";
+    } else if (event%2==0) {
+        document.getElementById(event).style.opacity = "0%";
+    }
 }
 
-
-
-function info1() {
-    document.getElementById("hover1").style.transition = "1s";
-    document.getElementById("hover1").style.opacity = "100%";
-}
-function rinfo1(){
-    document.getElementById("hover1").style.opacity = "0%";
-}
-function info2() {
-    document.getElementById("hover2").style.transition = "1s";
-    document.getElementById("hover2").style.opacity = "100%";
-}
-function rinfo2(){
-    document.getElementById("hover2").style.opacity = "0%";
-}
-function info3() {
-    document.getElementById("hover3").style.transition = "1s";
-    document.getElementById("hover3").style.opacity = "100%";
-}
-function rinfo3(){
-    document.getElementById("hover3").style.opacity = "0%";
-}
-function info4() {
-    document.getElementById("hover4").style.transition = "1s";
-    document.getElementById("hover4").style.opacity = "100%";
-}
-function rinfo4(){
-    document.getElementById("hover4").style.opacity = "0%";
-}
-function info5() {
-    document.getElementById("hover5").style.transition = "1s";
-    document.getElementById("hover5").style.opacity = "100%";
-}
-function rinfo5(){
-    document.getElementById("hover5").style.opacity = "0%";
-}
-function info6() {
-    document.getElementById("hover6").style.transition = "1s";
-    document.getElementById("hover6").style.opacity = "100%";
-}
-function rinfo6(){
-    document.getElementById("hover6").style.opacity = "0%";
-}
-function info7() {
-    document.getElementById("hover7").style.transition = "1s";
-    document.getElementById("hover7").style.opacity = "100%";
-}
-function rinfo7(){
-    document.getElementById("hover7").style.display = "none";
-}
 
 var pop = true;
 function popup(){
     pop = !pop
     if (pop == false) {
-        document.getElementById('menu').style.transition = "0.5s";
-        document.getElementById('menu').style.opacity = "100%";
-        document.getElementById('chevron').style.transition = "0.5s";
-        document.getElementById('chevron').style.transform = "rotate(180deg)";
-        document.getElementById('menutxt').style.color = "#00c8c8";
+        popupIn()
     } else if (pop == true){
-        document.getElementById('menu').style.opacity = "0%";
-        document.getElementById('chevron').style.transform = "rotate(360deg)";
-        document.getElementById('menutxt').style.color = "#222"
+        popupOut()
     }
 }
 function banner() {
     if (pop == false) {
-        document.getElementById('menu').style.opacity = "0%";
-        document.getElementById('chevron').style.transform = "rotate(360deg)"
-        document.getElementById('menutxt').style.color = "#222"
+        popupOut()
         pop = !pop
     }
 }
@@ -81,8 +41,19 @@ document.onkeydown = function(evt) {
     evt = evt || window.event;
     if (evt.keyCode == 27) {
         pop = !pop
-        document.getElementById('menu').style.opacity = "0%";
-        document.getElementById('chevron').style.transform = "rotate(0deg)"
-        document.getElementById('menutxt').style.color = "#222"
+        popupOut()
     }
 };
+
+function popupIn(){
+    document.getElementById('menu').style.transition = "0.5s";
+    document.getElementById('menu').style.opacity = "100%";
+    document.getElementById('chevron').style.transition = "0.5s";
+    document.getElementById('chevron').style.transform = "rotate(180deg)";
+    document.getElementById('menutxt').style.color = "#00c8c8";
+}
+function popupOut(){
+    document.getElementById('menu').style.opacity = "0%";
+    document.getElementById('chevron').style.transform = "rotate(0deg)"
+    document.getElementById('menutxt').style.color = "#222"
+}

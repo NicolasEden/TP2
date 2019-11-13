@@ -326,7 +326,7 @@ img.line {
         }
     }
 }
-.img2 {
+.img2, .img3 {
     p.title-img {
         font-size: 38px;
         color: #575153;
@@ -362,14 +362,23 @@ img.line {
         text-transform: none;
         color: #8e8c8c;
     }
+    p.txt4-img {
+        margin-top: 0px;
+        width: 250px;
+        font-size: 15px;
+        font-family: "Roboto";
+        text-transform: none;
+        color: $blue;
+    }
 }
 .button-img {
-cursor: default;
-  display: inline-block;
-  box-sizing: content-box;
-  cursor: pointer;
-  padding: 10px 20px;
-  border: 2px solid #575153;
-  font-family: Arial;
-  color: rgb(0, 0, 0);
+    display: inline-block;
+    box-sizing: content-box;
+    cursor: default;
+    padding: 10px 20px;
+    border: 2px solid #575153;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    margin-top: 300px;
+    margin-left: 25px;
 }
